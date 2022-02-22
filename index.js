@@ -116,8 +116,8 @@ document.addEventListener("keypress",function(){
 document.addEventListener("click",function(){
  
   if(!start){
-    document.querySelector("#level-title").textContent = "Level " + level ;
     start = true;
+    document.querySelector("#level-title").textContent = "Level " + level ;
     nextSecquence();
   }
 
