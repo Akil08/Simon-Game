@@ -113,6 +113,17 @@ document.addEventListener("keypress",function(){
 
 });
 
+document.addEventListener("click",function(){
+ 
+  if(!start){
+    document.querySelector("#level-title").textContent = "Level " + level ;
+    start = true;
+    nextSecquence();
+  }
+
+});
+
+
 for(var i=0;i<document.querySelectorAll(".btn").length;i++){
   document.querySelectorAll(".btn")[i].addEventListener("click",function(){
 
